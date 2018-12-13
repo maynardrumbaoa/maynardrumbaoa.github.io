@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+<style>
+body {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("bg.jpg");
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: rgba(225, 225, 225, 0.6);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;  
+  background-color: #ddd;
+  resize: vertical;
+}
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+.btn {
+   background-color: green;
+  width: 100%;
+    border: 1px solid green;
+  color: white;
+  padding: 12px 20px;
+    border: 1px solid green;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+color: green;
+  background-color: #fff;
+  border: 1px solid green;
+}
+
+a {
+  color: green;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+	height: 100%;
+  }
+}
+
+.navbar {
+  color: red;
+  overflow: hidden;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: red;
+  width: 15%;
+  text-align: center;
+  padding: 14px 16px;
+    background-color:rgba(225, 225, 225, 0.3);
+  text-decoration: none;
+    color: dodgerblue;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: transparent;
+   color: red;
+}
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+    <a href="contact.html">Contacts</a>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="mailto: maynardrumbaoa13@gmail.com">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="icon icon-user"></i> Full Name</label>
+            <input type="text" id="fullname" name="name" placeholder="John Dela Cruz">
+            <label for="email"><i class="icon icon-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="delacruz_one@gmail.com">
+            <label for="adr"><i class="icon icon-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street ">
+            <label for="city"><i class="icon icon-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Bacoor City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="prov">Province</label>
+                <input type="text" id="prov" name="province" placeholder="Cavite">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="1402">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="icon icon-cc-visa" style="color:navy;"></i>
+			  <i class="icon icon-cc-paypal" style="color:blue;"></i>
+              <i class="icon icon-cc-amex" style="color:lightgreen;"></i>
+              <i class="icon icon-cc-mastercard" style="color:red;"></i>
+              <i class="icon icon-cc-discover" style="color:orange;"></i>
+			  Or
+			  <i class="icon icon-bitcoin" style="color:gold;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Dela Cruz, John A.">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="xxx-2022-xx03-xx01">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+             
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+		<br>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"></span></h4>
+      <p><a href="#">Product 1</a> <span class="price"></span></p>
+      <p><a href="#">Product 2</a> <span class="price"></span></p>
+      <p><a href="#">Product 3</a> <span class="price"></span></p>
+      <p><a href="#">Product 4</a> <span class="price"></span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b></b></span></p>
+
+    </div>
+  </div>
+   
+</div>
+
+</body>
+</html>

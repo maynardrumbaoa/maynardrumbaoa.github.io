@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="css/style.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+}
+
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;  
+  background-color: #ddd;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: green;
+  width: 40%;
+    border: 1px solid green;
+  color: white;
+  padding: 12px 20px;
+    border: 1px solid green;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: green;
+  background-color: #fff;
+  border: 1px solid green;
+}
+
+
+input[type=reset] {
+  background-color: red;
+  color: white;
+   width: 40%;
+  padding: 12px 20px;
+   border: 1px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #fff;
+  border: 1px solid red;
+  color: red;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  column-count:2;
+  font-size: 20px;
+ 
+   background:linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.5))
+  ,url(footer-bg.jpg) no-repeat center;
+  background-size:cover;
+}
+h3{
+font-size: 30px;
+text-align: center;
+color: #fff;
+margin: 100px;
+text-shadow: 2px 2px 5px #000000;
+}
+
+ul li {
+list-style:none;
+margin: 10px;
+left: 50%;
+top: 50%;
+padding: 10px;
+text-align: center;
+font-size: 30px;
+width: 60px;
+height: 60px;
+background-color: #333;
+border-radius: 10px;
+text-align: center;
+transform: translate: (-50%, -50%);
+}
+ul li:hover{
+ box-shadow:  0 0 15px dodgerblue;
+ 
+ }
+ul li 	a {
+text-decoration: none;
+position: relative;
+text-align: center;
+box-sizing: border-box;
+color: #fff;
+transform: translate: (-50%, -50%);
+bottom: 10%;
+transition: 0.3s;
+}
+
+ul li 	a:hover{
+color: dodgerblue;
+text-shadow: 0 0 15px dodgerblue;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  color: gray;
+  box-shadow: 0 0 15px #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+
+.navbar:hover {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #fff;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index">Home</a>
+  <a href="shop.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+
+<h3>Contact Form</h3>
+<div class="container">
+  <form action="mailto: maynardrumbaoa13@gmail.com" method ="post" enctype ="text\plain">
+    <label for="fname"><i class="icon icon-user" style="color:#fff; font-size: 25px;"></i>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"><i class="icon icon-envelope" style="color: #fff; font-size: 25px;"></i>Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="location"><i class="icon icon-pin_drop" style="color:#fff; font-size: 25px;"></i>Location</label>
+    <select id="location" name="location">
+      <option value="ncr">NCR</option>
+	  <option value="luzon">Luzon</option>
+      <option value="visayas">Visayas</option>
+      <option value="mindanao">Mindanao</option>
+    </select>
+
+    <label for="subject"><i class="icon icon-chat_bubble" style="color:#fff; font-size: 25px;"></i>Subject</label>
+    <textarea id="subject" name="subject" placeholder="Your comments, suggestions, or requests.." style="height:200px"></textarea>
+<center>
+    <input type="reset" value="Cancel">
+	 <input type="submit" value="Submit">
+  </form>
+  </center>
+  
+  	<ul>
+				
+					<li> <a href="#"><i class="icon icon-facebook"></a></i></li>
+                    <li> <a href="#"><i class="icon icon-twitter"></a></i></li>
+                    <li> <a href="#"><i class="icon icon-pinterest"></a></i></li>
+                    <li> <a href="#"><i class="icon icon-linkedin"></a></i></li>
+					<li> <a href="#"><i class="icon icon-phone"></a></i></li>
+                    <li> <a href="#"><i class="icon icon-mail_outline"></a></i></li>
+                    <li> <a href="#"><i class="icon icon-snapchat-ghost"></a></i></li>
+				
+                </ul>
+	
+</div>
+
+</body>
+</html>
+
+      
